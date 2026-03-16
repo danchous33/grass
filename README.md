@@ -18,10 +18,11 @@ Prerequisites: Node.js
 This repo uses a `gh-pages` branch for deployment (no Actions required).
 
 1. Push the repo to GitHub and make sure your default branch is `main`.
-2. In GitHub, go to Settings -> Pages.
-3. Under Source, choose "Deploy from a branch".
-4. Select branch: `gh-pages` and folder: `/ (root)`.
-5. Run:
+2. Ensure `vite.config.ts` has `base: '/grass/'` (repo name).
+3. In GitHub, go to Settings -> Pages.
+4. Under Source, choose "Deploy from a branch".
+5. Select branch: `gh-pages` and folder: `/ (root)`.
+6. Run:
    `npm run deploy`
 
 After deploy, GitHub will show your Pages URL in Settings -> Pages.
