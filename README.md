@@ -13,13 +13,15 @@ Prerequisites: Node.js
 4. Run the app:
    `npm run dev`
 
-## Deploy to GitHub Pages
+## Deploy to GitHub Pages (branch-based)
 
-This repo includes a GitHub Actions workflow that builds and deploys the app to GitHub Pages.
+This repo uses a `gh-pages` branch for deployment (no Actions required).
 
 1. Push the repo to GitHub and make sure your default branch is `main`.
 2. In GitHub, go to Settings -> Pages.
-3. For Source, choose GitHub Actions.
-4. Push to `main` (or run the workflow manually).
+3. Under Source, choose "Deploy from a branch".
+4. Select branch: `gh-pages` and folder: `/ (root)`.
+5. Run:
+   `npm run deploy`
 
-After the workflow finishes, GitHub will show your Pages URL in the Actions run summary and in Settings -> Pages.
+After deploy, GitHub will show your Pages URL in Settings -> Pages.
